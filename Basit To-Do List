@@ -1,0 +1,11 @@
+tasks = []
+while True:
+    secim = input("1-Ekle 2-Göster q-Çıkış: ")
+    if secim == '1':
+        t = input("Görev: ")
+        tasks.append(t)
+    elif secim == '2':
+        for i,t in enumerate(tasks,1):
+            print(i, t)
+    elif secim=='q':
+        break
